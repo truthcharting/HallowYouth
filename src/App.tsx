@@ -1,17 +1,18 @@
 import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { Button } from './components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
-import { Separator } from './components/ui/separator';
-import { Play, MapPin, Users, Award, CheckCircle, Star, ArrowRight, Zap, Target, Globe, Menu, Mountain, Snowflake, Flag, X } from 'lucide-react';
+import { MapPin, Users, Award, CheckCircle, Zap, Target, Globe, Menu, Mountain, Snowflake, Flag, X } from 'lucide-react';
 import { motion } from 'motion/react';
-import heroImage from './assets/22c77bd596d7b07ff26c3faa8cb65418b4bb24e0.png';
+import heroImage from './assets/Poland_3JPG.jpg';
 import truthChartingLogo from './assets/Truth_Charting_Logo.png';
 import formedLogo from './assets/FORMED_LOGO.png';
+import basilicasImage from './assets/Basilicas.jpg';
+import antarcticaImage from './assets/Trinity_Church,_Antarctica_7577.jpeg';
+import roadTripImage from './assets/us-road-trip.png';
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-black text-white overflow-x-hidden relative">
+    <div id="top" className="min-h-screen bg-black text-white overflow-x-hidden relative">
       {/* Global Texture Overlay */}
       <div className="fixed inset-0 pointer-events-none z-0 opacity-20">
         <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 via-transparent to-red-500/5"></div>
@@ -25,11 +26,13 @@ export default function App() {
         <div className="bg-black/20 backdrop-blur-xl border border-orange-500/20 rounded-full px-6 py-3">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <img 
-                src={truthChartingLogo} 
-                alt="Truth Charting Logo" 
-                className="h-8 w-auto object-contain filter brightness-0 invert"
-              />
+              <a href="#top" className="cursor-pointer">
+                <img 
+                  src={truthChartingLogo} 
+                  alt="Truth Charting Logo" 
+                  className="h-8 w-auto object-contain filter brightness-0 invert"
+                />
+              </a>
             </div>
             <div className="hidden md:flex items-center gap-6">
               <a href="#partnership" className="text-white/70 hover:text-white transition-colors text-sm">Partnership</a>
@@ -163,7 +166,8 @@ export default function App() {
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.4 }}
                 viewport={{ once: true }}
-                className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10"
+                className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 flex items-center justify-center"
+                style={{ marginLeft: '-35px' }}
               >
                 <div className="w-12 h-12 md:w-16 md:h-16 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center shadow-2xl">
                   <X className="w-6 h-6 md:w-8 md:h-8 text-white" strokeWidth={3} />
@@ -176,7 +180,7 @@ export default function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="absolute left-1/2 top-1/2 transform -translate-x-full -translate-y-1/2"
+                className="absolute left-1/2 top-1/2 transform -translate-y-1/2"
                 style={{ marginLeft: '-270px' }}
               >
                 <img 
@@ -193,8 +197,8 @@ export default function App() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
-                className="absolute left-1/2 top-1/2 transform translate-x-full -translate-y-1/2"
-                style={{ marginLeft: '100px' }}
+                className="absolute left-1/2 top-1/2 transform -translate-y-1/2"
+                style={{ marginLeft: '90px', marginTop: '-15px' }}
               >
                 <img 
                   src={formedLogo} 
@@ -518,7 +522,7 @@ export default function App() {
               >
                 <div className="relative rounded-3xl overflow-hidden">
                   <ImageWithFallback
-                    src="/src/assets/Basilicas.jpg"
+                    src={basilicasImage}
                     alt="Catholic basilica"
                     className="w-full h-96 object-cover"
                   />
@@ -585,7 +589,7 @@ export default function App() {
               >
                 <div className="relative rounded-3xl overflow-hidden">
                   <ImageWithFallback
-                    src="/src/assets/Trinity_Church,_Antarctica_7577.jpeg"
+                    src={antarcticaImage}
                     alt="Antarctic adventure"
                     className="w-full h-96 object-cover"
                   />
@@ -651,7 +655,7 @@ export default function App() {
               >
                 <div className="relative rounded-3xl overflow-hidden">
                   <ImageWithFallback
-                    src="/src/assets/us-road-trip.png"
+                    src={roadTripImage}
                     alt="American Catholic communities"
                     className="w-full h-96 object-cover"
                   />
@@ -836,15 +840,15 @@ export default function App() {
           >
             <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Investment & Revenue Partnership</h3>
-              <p className="text-lg text-white/80 leading-relaxed">
-                FORMED's strategic upfront funding investment in the production of the Truth Charting Youth Series directly translates into shared revenue growth from expanding membership subscriptions. This bilateral partnership model ensures that FORMED's initial capital investment generates ongoing returns through Truth Charting's proven ability to drive subscriber engagement and retention across Catholic youth ministries.
+              <p className="text-lg text-white/80 leading-relaxed mb-6">
+                FORMED's strategic investment in Truth Charting's Youth Series creates a <span className="text-orange-400 font-semibold">bidirectional revenue sharing partnership</span>. When parishes subscribe to Truth Charting-only, FORMED receives revenue through our partnership agreement. When parishes access Truth Charting content through FORMED, Truth Charting receives revenue sharing as well. This mutual benefit model ensures both organizations thrive while strengthening Catholic formation across all subscription options.
               </p>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Why Choose Truth Charting */}
       <section className="py-32 relative">
         <div className="absolute inset-0 bg-gradient-to-b from-black via-orange-950/10 to-black"></div>
         <div className="container mx-auto px-4 relative z-10">
@@ -856,31 +860,34 @@ export default function App() {
             className="text-center mb-20"
           >
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              What Youth Ministers <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Say</span>
+              Why Choose <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Truth Charting?</span>
             </h2>
+            <p className="text-xl text-white/70 max-w-3xl mx-auto">
+              Discover what makes Truth Charting the revolutionary choice for Catholic youth formation
+            </p>
           </motion.div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
               {
-                quote: "Finally, content that keeps teenagers engaged while providing authentic Catholic formation. Our youth group retention has increased dramatically.",
-                name: "Maria Johnson",
-                role: "Youth Minister, St. Mary's Parish",
-                initials: "MJ"
+                icon: Zap,
+                title: "Proven Engagement",
+                description: "Over 3M unique viewers and 100K+ followers demonstrate our ability to captivate the digital generation with authentic Catholic content.",
+                color: "from-orange-500 to-red-600"
               },
               {
-                quote: "The adventure format is brilliant. Kids are actually excited for youth group now. The theological content is solid and age-appropriate.",
-                name: "Fr. David Rodriguez",
-                role: "Pastor, Holy Spirit Parish",
-                initials: "DR"
+                icon: Award,
+                title: "Award Winning Quality",
+                description: "Quality production value that rivals secular youth entertainment while maintaining Catholic integrity and values.",
+                color: "from-yellow-500 to-orange-500"
               },
               {
-                quote: "Truth Charting has revolutionized our youth ministry. The production quality rivals anything on Netflix, but with Catholic values.",
-                name: "Sarah Kim",
-                role: "Diocesan Youth Director",
-                initials: "SK"
+                icon: Target,
+                title: "Adventure-Driven Learning",
+                description: "Our unique format combines high-stakes adventure with deep theological formation, making complex concepts accessible and memorable.",
+                color: "from-red-500 to-orange-500"
               }
-            ].map((testimonial, index) => (
+            ].map((feature, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 50 }}
@@ -890,50 +897,37 @@ export default function App() {
               >
                 <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 hover:bg-white/10 transition-all duration-300 h-full hover:border-orange-500/40 relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-red-500/5"></div>
-                  <div className="flex items-center gap-1 mb-6 relative z-10">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="w-5 h-5 text-orange-400 fill-current" />
-                    ))}
+                  <div className={`w-16 h-16 mx-auto mb-6 rounded-2xl bg-gradient-to-r ${feature.color} flex items-center justify-center shadow-lg relative z-10`}>
+                    <feature.icon className="w-8 h-8 text-white" />
                   </div>
-                  <p className="text-white/80 mb-6 text-lg leading-relaxed relative z-10">"{testimonial.quote}"</p>
-                  <div className="flex items-center gap-4 relative z-10">
-                    <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold">{testimonial.initials}</span>
-                    </div>
-                    <div>
-                      <div className="font-semibold">{testimonial.name}</div>
-                      <div className="text-white/60 text-sm">{testimonial.role}</div>
-                    </div>
-                  </div>
+                  <h3 className="text-xl font-bold mb-4 text-center relative z-10">{feature.title}</h3>
+                  <p className="text-white/70 text-center leading-relaxed relative z-10">{feature.description}</p>
                 </div>
               </motion.div>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Final CTA */}
-      <section className="py-32 relative">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-red-600/20 to-orange-600/20"></div>
-        </div>
-        <div className="container mx-auto px-4 relative z-10 text-center">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
+            className="text-center mt-16"
           >
-            <h2 className="text-4xl md:text-6xl font-bold mb-8">
-              Ready to Transform <br />
-              <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Your Ministry?</span>
-            </h2>
-            <p className="text-xl text-white/70 mb-12 max-w-3xl mx-auto">
-              Join the revolution in Catholic youth formation. Give your teenagers content worthy of their attention and capable of transforming their lives.
-            </p>
+            <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-2xl font-bold mb-4">The Truth Charting Difference</h3>
+              <p className="text-lg text-white/80 leading-relaxed">
+                Unlike traditional youth ministry resources, Truth Charting combines <span className="text-orange-400 font-semibold">entertainment-grade production</span>, 
+                <span className="text-orange-400 font-semibold"> adventure-driven storytelling</span>, and <span className="text-orange-400 font-semibold">theological depth </span> 
+                 to create content that teenagers actually want to watch. Our proven track record of engaging millions of viewers 
+                demonstrates that Catholic formation can be both entertaining and transformative.
+              </p>
+            </div>
           </motion.div>
         </div>
       </section>
+
+
 
       {/* Quote Section */}
       <section className="py-20 relative">
@@ -954,7 +948,7 @@ export default function App() {
 
 
       {/* Footer */}
-      <footer className="bg-black/50 backdrop-blur-xl border-t border-orange-500/20 py-16">
+      <footer id="contact" className="bg-black/50 backdrop-blur-xl border-t border-orange-500/20 py-16">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 max-w-2xl mx-auto">
@@ -974,11 +968,9 @@ export default function App() {
                 </div>
               </div>
               <div className="flex items-center justify-center gap-2 mb-6">
-                <img 
-                  src={truthChartingLogo} 
-                  alt="Truth Charting Logo" 
-                  className="h-8 w-auto object-contain filter brightness-0 invert"
-                />
+                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-600 rounded-lg flex items-center justify-center">
+                  <span className="text-white text-sm font-bold">TC</span>
+                </div>
                 <span className="text-xl font-medium">Truth Charting LLC</span>
               </div>
               <p className="text-white/60 text-sm">&copy; 2025 Truth Charting Youth Series. All rights reserved.</p>
