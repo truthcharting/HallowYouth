@@ -34,4 +34,5 @@
       port: 4173,
       open: true,
     },
+    publicDir: 'public',
   });
