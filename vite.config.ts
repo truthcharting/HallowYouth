@@ -4,7 +4,6 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/TCYouthSeries/',
     plugins: [react()],
     resolve: {
       alias: {
