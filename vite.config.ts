@@ -4,7 +4,7 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/HallowYouth/',
+    base: '/',
     plugins: [react()],
     resolve: {
       alias: {

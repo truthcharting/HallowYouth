@@ -21,3 +21,4 @@ git commit -m "Deploy: $(date)"
 git push origin gh-pages
 
 echo "Deployment complete! Visit https://truthcharting.github.io/HallowYouth/"
+echo "Note: Make sure vite.config.ts has base: '/HallowYouth/' for correct asset paths"
