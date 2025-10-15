@@ -4,9 +4,16 @@
 echo "Building project..."
 npm run build
 
-# Force add dist folder (ignored by .gitignore)
-echo "Adding dist folder to git..."
-git add -f dist/
+# Copy dist files to root for GitHub Pages
+echo "Copying dist files to root..."
+cp -r dist/* .
+
+# Add .nojekyll to prevent Jekyll processing
+touch .nojekyll
+
+# Add all files
+echo "Adding files to git..."
+git add .
 
 # Commit and push
 echo "Committing and pushing to GitHub Pages..."
