@@ -5,7 +5,7 @@ import { MapPin, Users, Award, CheckCircle, Zap, Target, Globe, Menu, Mountain, 
 import { motion } from 'motion/react';
 import heroImage from './assets/Poland_3JPG.jpg';
 import truthChartingLogo from './assets/Truth_Charting_Logo.png';
-import formedLogo from './assets/FORMED_LOGO.png';
+import hallowLogo from './assets/Hallow-Purple-Logo.png';
 import basilicasImage from './assets/Basilicas.jpg';
 import antarcticaImage from './assets/Trinity_Church,_Antarctica_7577.jpeg';
 import roadTripImage from './assets/us-road-trip.png';
@@ -124,7 +124,7 @@ export default function App() {
               transition={{ duration: 1, delay: 0.4 }}
               className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed drop-shadow-lg"
             >
-              The first subscription-based Catholic youth curriculum that combines Grand Tour-style adventure with deep theological formation.
+              The first subscription-based Catholic youth curriculum that combines high-stakes adventure with deep theological formation.
             </motion.p>
           </div>
         </div>
@@ -191,19 +191,19 @@ export default function App() {
                 />
               </motion.div>
 
-              {/* FORMED Logo - positioned relative to X */}
+              {/* Hallow Logo - positioned relative to X */}
               <motion.div
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
                 viewport={{ once: true }}
                 className="absolute left-1/2 top-1/2 transform -translate-y-1/2"
-                style={{ marginLeft: '90px', marginTop: '-15px' }}
+                style={{ marginLeft: '90px', marginTop: '0px' }}
               >
                 <img 
-                  src={formedLogo} 
-                  alt="FORMED Logo" 
-                  className="h-16 md:h-20 object-contain filter brightness-0 invert"
+                  src={hallowLogo} 
+                  alt="Hallow Logo" 
+                  className="h-10 md:h-12 object-contain filter brightness-0 invert"
                 />
               </motion.div>
             </div>
@@ -229,7 +229,7 @@ export default function App() {
             >
               <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 md:p-12">
                 <p className="text-lg md:text-xl text-white/90 leading-relaxed mb-8">
-                  Truth Charting's <span className="text-orange-400 font-semibold">engaging, high-stakes adventure format</span> perfectly complements FORMED's proven <span className="text-orange-400 font-semibold">distribution infrastructure and parish relationships</span>.
+                  Truth Charting's <span className="text-orange-400 font-semibold">engaging, high-stakes adventure format</span> perfectly complements Hallow's proven <span className="text-orange-400 font-semibold">digital platform and user engagement strategies</span>.
                 </p>
                 
                 <div className="grid md:grid-cols-2 gap-8 text-left">
@@ -256,19 +256,19 @@ export default function App() {
                   </div>
                   
                   <div>
-                    <h4 className="text-xl font-semibold mb-4 text-orange-300">FORMED Provides:</h4>
+                    <h4 className="text-xl font-semibold mb-4 text-orange-300">Hallow Provides:</h4>
                     <ul className="space-y-3">
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
-                        <span className="text-white/80">Established relationships with 5,000+ Catholic parishes</span>
+                        <span className="text-white/80">Millions of engaged Catholic users worldwide</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
-                        <span className="text-white/80">Proven streaming infrastructure serving 1.6M+ people</span>
+                        <span className="text-white/80">Proven mobile app platform with millions of daily users</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
-                        <span className="text-white/80">Institutional credibility and Augustine Institute backing</span>
+                        <span className="text-white/80">Strong brand recognition and user engagement</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <CheckCircle className="w-5 h-5 text-orange-400 mt-1 flex-shrink-0" />
@@ -714,7 +714,7 @@ export default function App() {
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
               Structured for <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Success</span>
             </h2>
-            <p className="text-xl text-white/70">45-50 minute episodes designed for optimal engagement</p>
+            <p className="text-xl text-white/70">45-50 minute sessions designed for optimal engagement</p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -749,6 +749,115 @@ export default function App() {
         </div>
       </section>
 
+      {/* Episode Script Example */}
+      <section className="py-32 relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-black via-orange-950/10 to-black"></div>
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-center mb-20"
+          >
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              Episode <span className="bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent">Script</span> Format
+            </h2>
+            <p className="text-xl text-white/70">See how our structured approach creates engaging, formation-rich content</p>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+            className="max-w-5xl mx-auto"
+          >
+            <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-3xl p-8 md:p-12 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-red-500/5"></div>
+              
+              <div className="relative z-10">
+                <div className="flex items-center gap-3 mb-8">
+                  <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
+                  <h3 className="text-2xl font-bold text-orange-300">Episode Script Structure</h3>
+                </div>
+                
+                <div className="space-y-6 text-left">
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[INTRO]</h4>
+                    <div className="script-content">
+                      <h5 className="text-md font-semibold text-orange-100 mb-2">[CONSISTENT EXPLANATION OF THE CONSISTENT CHALLENGE]</h5>
+                      <p className="text-white/80 mb-4">This script stays the same each episode. Refreshing the memory of all the viewers and catching new viewers up to speed</p>
+                    </div>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[RECAP OF LAST EP CHALLENGE]</h4>
+                    <p className="text-white/80 mb-4">In this short section, we simply catch the viewers up on what happened in the last episode in regards to the challenge. Example: "Last week, on our journey to Antarctica, we made it to Brazil as we made our way south, we hiked through the dangerous region of [name] and survived crawling through this sketchy, snake-filled tunnel."</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[RECAP OF LAST EP TOPIC]</h4>
+                    <p className="text-white/80 mb-4">Example: "After we made it to Rio, we sat down with Fr. [name] in front of this infamous statue of Christ the Redeemer and he taught us about the importance of reading scripture as we pray so that we can learn about the heart of God directly from His Word."</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[INTRODUCE THIS EPISODE'S GOAL]</h4>
+                    <p className="text-white/80 mb-4">Example: "Today, [co-host] and I have a goal to make it down to Argentina where we will meet our guides who will be taking us to Antarctica. But in order to do that, we first need to get to the airport here in Rio... without using our phones." [Riser+Impact]</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[ACT 1 + ICE BREAKER DISCUSSION]</h4>
+                    <p className="text-white/80 mb-4">[Co-host] and John begin their journey to the airport. While they attempt to ask people on the street for directions in very broken Portuguese, [Co-host] asks John "If you could speak every other language right now, but by doing so you'd lose the ability to speak English, would you do it?"</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[QUESTION SCREEN + DISCUSSION GROUPS]</h4>
+                    <p className="text-white/80 mb-4">The Youth leaders pause the video here and break the Youth group into small groups to talk for about 5 minutes on the proposed question on screen.</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[BACK TO CHALLENGE SEGMENT]</h4>
+                    <p className="text-white/80 mb-4">Eventually, John and [co-host] find someone who speaks english and gives them a directions to the airport, etc.</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[ACT 2 + FORMATION CONTENT]</h4>
+                    <p className="text-white/80 mb-4">[Co-host] and John talk to the camera while they are flying to Argentina about the topic of the day, they share personal experiences, share what stood out to them about the content of their last guest, and segway that to the next topic.</p>
+                    <p className="text-white/80 mb-4">They land in Argentina and are picked up from the airport by their next guest.</p>
+                    <p className="text-white/80 mb-4">They go to the place where they will set up the interview and we show some BTS of the team setting up the equipment.</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[INTERVIEW]</h4>
+                    <p className="text-white/80 mb-4">[Co-host] or John sits down with the guest and begins the formation on the topic of this episode.</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[DISCUSSION BREAKOUT]</h4>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[ACT 3 + FORMATION CUTBACKS]</h4>
+                    <p className="text-white/80 mb-4">[Co-host] and John pack up and say goodbye to their interview guest and go on to meet their arctic guides, get fitted for the proper snow-suits, etc.</p>
+                    <p className="text-white/80 mb-4">As this is going on, they debrief the prior discussion with each other and present new questions.</p>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[LAST DISCUSSION BREAKOUT]</h4>
+                  </div>
+
+                  <div className="script-section">
+                    <h4 className="text-lg font-semibold text-orange-200 mb-3">[TEASE NEXT EP]</h4>
+                    <p className="text-white/80 mb-4">[Co-host] and John prepare and get rest before their journey, pack up and begin walking toward the propeller plane that will take them to Antarctica on the tarmac. Cut to black. White text on screen: "NEXT EPISODE", Rapid cuts of intense sections of the next episode.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* Pricing Section */}
       <section id="pricing" className="py-32 relative">
         <div className="absolute inset-0 bg-gradient-to-r from-red-900/20 via-black to-orange-900/20"></div>
@@ -766,27 +875,20 @@ export default function App() {
             <p className="text-xl text-white/70">Choose the plan that transforms your ministry</p>
           </motion.div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {[
               {
-                name: "Individual Parish",
+                name: "Direct Subscription",
                 price: "$99",
-                desc: "Perfect for single parish youth ministries",
+                desc: "Truth Charting Youth Series direct access",
                 features: ["Full season access", "Leader guides included", "4K streaming quality", "Discussion resources"],
                 popular: false
               },
               {
-                name: "Diocesan License",
+                name: "Hallow Faith Formation",
                 price: "Custom",
-                desc: "Unlimited parish access within diocese",
-                features: ["Unlimited parishes", "All parish features", "Diocesan admin dashboard", "Priority support"],
-                popular: true
-              },
-              {
-                name: "FORMED Integration",
-                price: "Custom",
-                desc: "Revenue sharing partnership model",
-                features: ["Existing FORMED access", "Integrated platform", "Single subscription", "Enhanced features"],
+                desc: "Available through Hallow's Faith Formation subscription",
+                features: ["Part of Hallow Faith Formation subscription", "Integrated with Hallow platform", "Bi-directional revenue sharing", "Enhanced parish formation tools"],
                 popular: false
               }
             ].map((plan, index) => (
@@ -841,7 +943,7 @@ export default function App() {
             <div className="bg-white/5 backdrop-blur-xl border border-orange-500/20 rounded-2xl p-8 max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Investment & Revenue Partnership</h3>
               <p className="text-lg text-white/80 leading-relaxed mb-6">
-                FORMED's strategic investment in Truth Charting's Youth Series creates a <span className="text-orange-400 font-semibold">bidirectional revenue sharing partnership</span>. When parishes subscribe to Truth Charting-only, FORMED receives revenue through our partnership agreement. When parishes access Truth Charting content through FORMED, Truth Charting receives revenue sharing as well. This mutual benefit model ensures both organizations thrive while strengthening Catholic formation across all subscription options.
+                <span className="text-orange-400 font-semibold">Simple Partnership Model:</span> Wherever the Truth Charting Youth Series is being used, through our bi-directional revenue sharing agreement, both Hallow and Truth Charting always benefit. This ensures both organizations thrive while strengthening Catholic formation.
               </p>
             </div>
           </motion.div>
